@@ -35,7 +35,7 @@ module.exports = {
                             esModule: true,
                             },
                         },
-                    'css-loader', //"sass-loader",
+                    'css-loader',
                 ],
             },
             {
