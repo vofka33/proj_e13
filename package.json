@@ -1,0 +1,38 @@
+{
+  "name": "proj_e13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start_dev_server": "webpack serve --config config/webpack.dev_server.js",
+    "start_prod": "webpack --config config/webpack.prod.js --watch",
+    "start_dev": "webpack --config config/webpack.dev.js --watch",
+    "prepare": "husky install",
+    "lint": "eslint src/*.js & stylelint src/*.css",
+    "json": "json-server --watch database.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.8.2",
+    "stylelint-webpack-plugin": "^3.2.0",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^25.0.0"
+  }
+}
